@@ -43,3 +43,9 @@ def test_get_nth_fibonacci_five():
 
 def test_get_nth_fibonacci_ten():
     assert get_nth_fibonacci(10) == 55
+
+
+def test_get_nth_fibonacci_negative():
+    import pytest
+    with pytest.raises(ValueError):
+        get_nth_fibonacci(-1)
